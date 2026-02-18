@@ -92,7 +92,98 @@ h1 {
     }
 }
 
-//@media screen and (min-width: 750px) {
-header {}
+.first {
+    height: 510px;
+    width: 100%;
+    background-color: $black;
+    @include align-center;
+    justify-content: center;
 
-//
+
+    .texts {
+        width: 300px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+
+        align-items: center;
+
+        @media screen and (min-width:750px) {
+            width: 600px;
+        }
+
+
+        h3 {
+            font-size: 14px;
+            font-weight: 400;
+            letter-spacing: 10px;
+            color: $white;
+            opacity: 49%;
+        }
+
+        h2 {
+            font-size: 36px;
+            font-weight: 700;
+            color: $white;
+            line-height: 40px;
+            letter-spacing: 1.29px;
+        }
+
+        p.exprience {
+            font-size: 15px;
+            font-weight: 400;
+            color: $white;
+            opacity: 75%;
+        }
+
+        button {
+            background-color: $dark_orange;
+            width: 160px;
+            height: 48px;
+            color: $white;
+            font-weight: 700;
+            font-size: 13px;
+            border: none;
+        }
+    }
+}
+
+.second {
+    @include align-center();
+    flex-direction: column;
+
+    .card {
+        width: 327px;
+        height: 165px;
+        background-color: $grey;
+        padding-top: 88px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 92px;
+
+        img {
+            width: 80px;
+            height: 104px;
+            position: absolute;
+            top: -20%;
+
+        }
+
+        h4 {
+            margin-bottom: 17px;
+        }
+
+        li {
+            list-style: none;
+
+            a {
+                text-decoration: none;
+                color: $black;
+                opacity: 50%;
+            }
+        }
+    }
+}
